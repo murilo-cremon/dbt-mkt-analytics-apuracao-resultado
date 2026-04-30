@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "dw_analytics"."raw"."campaigns" ("campaign_id" integer,"canal" text,"nome_campanha" text,"orcamento" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "dw_analytics"."raw"."campaigns" ("campaign_id", "canal", "nome_campanha", "orcamento") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  

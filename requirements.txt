@@ -1,0 +1,6 @@
+dbt-core==1.11.8
+dbt-postgres==1.10.0
+psycopg2-binary==2.9.9
+pandas==2.2.2
+faker==37.1.0
+numpy==1.26.4

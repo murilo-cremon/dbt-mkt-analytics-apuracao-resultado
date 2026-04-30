@@ -1,0 +1,106 @@
+version: 2
+
+seeds:
+  - name: campaigns
+    description: "Tabela de campanhas de marketing por canal e orçamento"
+    columns:
+      - name: campaign_id
+        description: "Identificador único da campanha"
+        data_type: integer
+        tests:
+          - unique
+          - not_null
+    
+      - name: canal
+        description: "Canal de marketing (google, meta, linkedin)"
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["google", "meta", "linkedin"]
+
+      - name: nome_campanha
+        description: "Nome descritivo da campanha"
+        data_type: string
+        tests:
+          - not_null        
+
+      - name: orcamento
+        description: "Orçamento real da campanha"
+        data_type: numeric
+        tests:
+          - not_null        
+
+  - name: leads
+    description: "Leads gerados a partir das campanhas"
+    columns:
+      - name: lead_id
+        description: "Identificador único do lead"
+        data_type: integer
+        tests:
+          - unique
+          - not_null
+      
+      - name: user_id
+        description: "Identificador do usuário"
+        data_type: integer
+
+      - name: campaign_id
+        description: "Canal de aquisição"
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["google", "meta", "linkedin"]
+
+      - name: created_at
+        description: "Data de aquisiçao do lead"
+        data_type: date
+
+  - name: conversions
+    description: "Conversões realizadas a partir dos leads"
+    columns:
+      - name: conversion_id
+        description: "Identificador único da conversão"
+        data_type: integer
+        tests:
+          - unique
+          - not_null
+      
+      - name: lead_id
+        description: "Lead que gerou a conversao"
+        data_type: integer
+        tests:
+          - not_null
+
+      - name: converted_at
+        description: "Data de conversao"
+        data_type: date
+        tests:
+          - not_null
+
+      - name: revenue
+        description: "Receita gerada pela conversao"
+        data_type: numeric
+        tests:
+          - not_null        
+      
+  - name: ad_spend
+    description: "Gasto diário por canal de marketing"
+    columns:
+      - name: date
+        description: "Data do gasto"
+        data_type: date
+
+      - name: canal
+        description: "Canal da mídia paga"
+        data_type: string
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["google", "meta", "linkedin"]
+
+      - name: spend
+        description: "Valor gasto no dia"
+        data_type: numeric
+    

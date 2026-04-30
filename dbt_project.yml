@@ -1,0 +1,30 @@
+name: 'dbt_marketing_analytics'
+version: '1.0.0'
+profile: 'dbt_marketing_analytics'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  dbt_marketing_analytics:
+    raw:
+      +schema: raw
+      +materialized: seed
+      +tags: ["raw", "marketing"]
+
+models:
+  dbt_marketing_analytics:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
