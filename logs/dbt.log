@@ -2381,3 +2381,1924 @@ parsing.
 [0m16:54:23.628799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e6713590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e5be9a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8f7dc79b0>]}
 [0m16:54:23.629095 [debug] [MainThread]: Flushing usage events
 [0m16:54:24.383904 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:07:37.484017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d22915e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d0dcfe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d0400cb0>]}
+
+
+============================== 15:07:37.497491 | 811f0c59-4bb0-4201-a22e-ae200d6d60ca ==============================
+[0m15:07:37.497491 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:07:37.498130 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/murilo/.dbt', 'warn_error': 'None', 'printer_width': '80', 'introspect': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'empty': 'None', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select source:raw', 'cache_selected_only': 'False', 'debug': 'False', 'no_print': 'None'}
+[0m15:07:37.743035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cf7876b0>]}
+[0m15:07:37.792032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d05414c0>]}
+[0m15:07:37.792782 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:07:37.899622 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m15:07:38.024147 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m15:07:38.024809 [debug] [MainThread]: Partial parsing: added file: dbt_marketing_analytics://models/sources.yml
+[0m15:07:38.177779 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'raw_campaigns'
+in package 'dbt_marketing_analytics' (models/sources.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m15:07:38.178255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7ce3e6870>]}
+[0m15:07:38.283493 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_marketing_analytics.marts
+- models.dbt_marketing_analytics.staging
+[0m15:07:38.291258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cdb10440>]}
+[0m15:07:38.409103 [debug] [MainThread]: Wrote artifact WritableManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/manifest.json
+[0m15:07:38.410792 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/semantic_manifest.json
+[0m15:07:38.466428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7ceb53d40>]}
+[0m15:07:38.466928 [info ] [MainThread]: Found 4 seeds, 34 data tests, 4 sources, 466 macros
+[0m15:07:38.467310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '811f0c59-4bb0-4201-a22e-ae200d6d60ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cdb12f00>]}
+[0m15:07:38.469235 [info ] [MainThread]: 
+[0m15:07:38.469600 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:07:38.469896 [info ] [MainThread]: 
+[0m15:07:38.470378 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:07:38.473574 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dw_analytics_raw'
+[0m15:07:38.509962 [debug] [ThreadPool]: Using postgres connection "list_dw_analytics_raw"
+[0m15:07:38.510379 [debug] [ThreadPool]: On list_dw_analytics_raw: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "list_dw_analytics_raw"} */
+select
+      'dw_analytics' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m15:07:38.510685 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:07:38.511480 [debug] [ThreadPool]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m15:07:38.512167 [debug] [ThreadPool]: Postgres adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "list_dw_analytics_raw"} */
+select
+      'dw_analytics' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m15:07:38.512495 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m15:07:38.512822 [debug] [ThreadPool]: Postgres adapter: Error running SQL: macro list_relations_without_caching
+[0m15:07:38.513095 [debug] [ThreadPool]: Postgres adapter: Rolling back transaction.
+[0m15:07:38.513401 [debug] [ThreadPool]: On list_dw_analytics_raw: No close available on handle
+[0m15:07:38.514024 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:07:38.514390 [debug] [MainThread]: Connection 'list_dw_analytics_raw' was properly closed.
+[0m15:07:38.514698 [info ] [MainThread]: 
+[0m15:07:38.515026 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.04 seconds (0.04s).
+[0m15:07:38.515490 [error] [MainThread]: Encountered an error:
+Database Error
+  connection to server at "localhost" (::1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+[0m15:07:38.516103 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:07:38.518876 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.0840977, "process_in_blocks": "46720", "process_kernel_time": 0.284538, "process_mem_max_rss": "125428", "process_out_blocks": "2328", "process_user_time": 1.952966}
+[0m15:07:38.519474 [debug] [MainThread]: Command `dbt test` failed at 15:07:38.519357 after 1.08 seconds
+[0m15:07:38.520193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cfebd700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cdf1ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cdb31610>]}
+[0m15:07:38.520665 [debug] [MainThread]: Flushing usage events
+[0m15:07:39.143428 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:44.402522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5188a16a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51890698e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51891003e0>]}
+
+
+============================== 15:08:44.405243 | 2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752 ==============================
+[0m15:08:44.405243 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:08:44.405768 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/home/murilo/.dbt', 'quiet': 'False', 'static_parser': 'True', 'no_print': 'None', 'empty': 'None', 'version_check': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select source:raw', 'printer_width': '80', 'log_cache_events': 'False', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'use_colors': 'True', 'log_path': '/home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/logs', 'introspect': 'True'}
+[0m15:08:44.528738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5187dedc10>]}
+[0m15:08:44.578102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518ae94dd0>]}
+[0m15:08:44.578854 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:08:44.658283 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m15:08:44.748864 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:08:44.749261 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:08:44.749603 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:08:44.753830 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_marketing_analytics.marts
+- models.dbt_marketing_analytics.staging
+[0m15:08:44.783830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518791f3e0>]}
+[0m15:08:44.850758 [debug] [MainThread]: Wrote artifact WritableManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/manifest.json
+[0m15:08:44.852297 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/semantic_manifest.json
+[0m15:08:44.866536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518656b950>]}
+[0m15:08:44.867065 [info ] [MainThread]: Found 4 seeds, 34 data tests, 4 sources, 466 macros
+[0m15:08:44.867503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5187941910>]}
+[0m15:08:44.869640 [info ] [MainThread]: 
+[0m15:08:44.869975 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:08:44.870263 [info ] [MainThread]: 
+[0m15:08:44.870740 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:08:44.874232 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dw_analytics_raw'
+[0m15:08:44.906193 [debug] [ThreadPool]: Using postgres connection "list_dw_analytics_raw"
+[0m15:08:44.906618 [debug] [ThreadPool]: On list_dw_analytics_raw: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "list_dw_analytics_raw"} */
+select
+      'dw_analytics' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m15:08:44.906975 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:44.956773 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.050 seconds
+[0m15:08:44.958240 [debug] [ThreadPool]: On list_dw_analytics_raw: ROLLBACK
+[0m15:08:44.958833 [debug] [ThreadPool]: On list_dw_analytics_raw: Close
+[0m15:08:44.963829 [debug] [MainThread]: Using postgres connection "master"
+[0m15:08:44.964304 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:08:44.964721 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:44.980366 [debug] [MainThread]: SQL status: SELECT 0 in 0.016 seconds
+[0m15:08:44.981606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a5f3c9e-d1aa-4883-9fdd-bd1190ec4752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518ae94d10>]}
+[0m15:08:44.982046 [debug] [MainThread]: On master: ROLLBACK
+[0m15:08:44.982580 [debug] [MainThread]: On master: COMMIT
+[0m15:08:44.982897 [debug] [MainThread]: Using postgres connection "master"
+[0m15:08:44.983179 [debug] [MainThread]: On master: COMMIT
+[0m15:08:44.983739 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m15:08:44.984045 [debug] [MainThread]: On master: Close
+[0m15:08:44.987147 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:08:44.987672 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:08:44.988500 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8
+[0m15:08:44.988911 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:08:44.988096 [info ] [Thread-1 (]: 1 of 17 START test source_accepted_values_raw_ad_spend_canal__google__meta__linkedin  [RUN]
+[0m15:08:44.989404 [info ] [Thread-2 (]: 2 of 17 START test source_accepted_values_raw_campaigns_canal__google__meta__linkedin  [RUN]
+[0m15:08:44.989824 [info ] [Thread-3 (]: 3 of 17 START test source_accepted_values_raw_leads_campaign_id__google__meta__linkedin  [RUN]
+[0m15:08:44.990209 [info ] [Thread-4 (]: 4 of 17 START test source_not_null_raw_ad_spend_canal .......................... [RUN]
+[0m15:08:44.990646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dw_analytics_raw, now test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86)
+[0m15:08:44.991086 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54'
+[0m15:08:44.991561 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8'
+[0m15:08:44.991977 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920'
+[0m15:08:44.992333 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:08:44.992673 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:08:44.993018 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8
+[0m15:08:44.993356 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:08:45.009616 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:08:45.011536 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:08:45.016249 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8"
+[0m15:08:45.073166 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:08:45.074194 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:08:45.074636 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:08:45.085309 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:08:45.085749 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8
+[0m15:08:45.089512 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:08:45.091403 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:08:45.093123 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:08:45.095021 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8"
+[0m15:08:45.096015 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:08:45.096554 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8"
+[0m15:08:45.096945 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select canal
+from "dw_analytics"."raw"."ad_spend"
+where canal is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.097321 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:08:45.097702 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:08:45.098039 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        campaign_id as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."leads"
+    group by campaign_id
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.098488 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:08:45.098858 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        canal as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."campaigns"
+    group by canal
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.099269 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        canal as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."ad_spend"
+    group by canal
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.099718 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:08:45.100250 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:08:45.100752 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:45.108251 [debug] [Thread-3 (]: Postgres adapter: Postgres error: invalid input syntax for type integer: "google"
+LINE 29:     'google','meta','linkedin'
+             ^
+
+[0m15:08:45.108792 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8: ROLLBACK
+[0m15:08:45.109189 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m15:08:45.109692 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8: Close
+[0m15:08:45.110039 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:08:45.113238 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: ROLLBACK
+[0m15:08:45.113606 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.013 seconds
+[0m15:08:45.114898 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: ROLLBACK
+[0m15:08:45.116915 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: ROLLBACK
+[0m15:08:45.117297 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: Close
+[0m15:08:45.117886 [info ] [Thread-4 (]: 4 of 17 PASS source_not_null_raw_ad_spend_canal ................................ [[32mPASS[0m in 0.13s]
+[0m15:08:45.118284 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: Close
+[0m15:08:45.118620 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: Close
+[0m15:08:45.119084 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:08:45.119652 [info ] [Thread-2 (]: 2 of 17 PASS source_accepted_values_raw_campaigns_canal__google__meta__linkedin  [[32mPASS[0m in 0.13s]
+[0m15:08:45.120185 [info ] [Thread-1 (]: 1 of 17 PASS source_accepted_values_raw_ad_spend_canal__google__meta__linkedin . [[32mPASS[0m in 0.13s]
+[0m15:08:45.120726 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:08:45.121557 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:08:45.122083 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:08:45.122514 [info ] [Thread-4 (]: 5 of 17 START test source_not_null_raw_campaigns_campaign_id ................... [RUN]
+[0m15:08:45.123274 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:08:45.123766 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:08:45.124206 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869)
+[0m15:08:45.124673 [info ] [Thread-2 (]: 6 of 17 START test source_not_null_raw_campaigns_canal ......................... [RUN]
+[0m15:08:45.125171 [info ] [Thread-1 (]: 7 of 17 START test source_not_null_raw_campaigns_nome_campanha ................. [RUN]
+[0m15:08:45.125574 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:08:45.125975 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832)
+[0m15:08:45.126352 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617)
+[0m15:08:45.129801 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:08:45.130270 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:08:45.130717 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:08:45.131490 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:08:45.135337 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:08:45.138557 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:08:45.140462 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:08:45.141152 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:08:45.143251 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:08:45.144005 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:08:45.144468 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:08:45.144824 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:08:45.145163 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select canal
+from "dw_analytics"."raw"."campaigns"
+where canal is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.147050 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select campaign_id
+from "dw_analytics"."raw"."campaigns"
+where campaign_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.149069 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:08:45.149490 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:08:45.149865 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:08:45.150649 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:08:45.151243 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select nome_campanha
+from "dw_analytics"."raw"."campaigns"
+where nome_campanha is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.151679 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:45.153667 [debug] [Thread-3 (]: Database Error in test source_accepted_values_raw_leads_campaign_id__google__meta__linkedin (models/sources.yml)
+  invalid input syntax for type integer: "google"
+  LINE 29:     'google','meta','linkedin'
+               ^
+  compiled code at target/run/dbt_marketing_analytics/models/sources.yml/source_accepted_values_raw_lea_4caee098809e11da450059029a3fc2fa.sql
+[0m15:08:45.154203 [error] [Thread-3 (]: 3 of 17 ERROR source_accepted_values_raw_leads_campaign_id__google__meta__linkedin  [[31mERROR[0m in 0.16s]
+[0m15:08:45.154998 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8
+[0m15:08:45.155491 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:08:45.155974 [debug] [Thread-7 (]: Marking all children of 'test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8' to be skipped because of status 'error'.  Reason: Database Error in test source_accepted_values_raw_leads_campaign_id__google__meta__linkedin (models/sources.yml)
+  invalid input syntax for type integer: "google"
+  LINE 29:     'google','meta','linkedin'
+               ^
+  compiled code at target/run/dbt_marketing_analytics/models/sources.yml/source_accepted_values_raw_lea_4caee098809e11da450059029a3fc2fa.sql.
+[0m15:08:45.156387 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:08:45.156730 [info ] [Thread-3 (]: 8 of 17 START test source_not_null_raw_campaigns_orcamento ..................... [RUN]
+[0m15:08:45.157137 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m15:08:45.157479 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m15:08:45.159172 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: ROLLBACK
+[0m15:08:45.159590 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_leads_campaign_id__google__meta__linkedin.f3e6b40cb8, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf)
+[0m15:08:45.161028 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: ROLLBACK
+[0m15:08:45.162275 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: ROLLBACK
+[0m15:08:45.162807 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:08:45.163195 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: Close
+[0m15:08:45.166498 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:08:45.166891 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: Close
+[0m15:08:45.167243 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: Close
+[0m15:08:45.167835 [info ] [Thread-4 (]: 5 of 17 PASS source_not_null_raw_campaigns_campaign_id ......................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.168622 [info ] [Thread-2 (]: 6 of 17 PASS source_not_null_raw_campaigns_canal ............................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.169221 [info ] [Thread-1 (]: 7 of 17 PASS source_not_null_raw_campaigns_nome_campanha ....................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.169704 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:08:45.170265 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:08:45.170776 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:08:45.171249 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:08:45.173519 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:08:45.174103 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:08:45.174681 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:08:45.175093 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:08:45.175612 [info ] [Thread-4 (]: 9 of 17 START test source_not_null_raw_conversions_conversion_id ............... [RUN]
+[0m15:08:45.176057 [info ] [Thread-2 (]: 10 of 17 START test source_not_null_raw_conversions_converted_at ............... [RUN]
+[0m15:08:45.176479 [info ] [Thread-1 (]: 11 of 17 START test source_not_null_raw_conversions_lead_id .................... [RUN]
+[0m15:08:45.176925 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:08:45.177308 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869, now test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918)
+[0m15:08:45.177695 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832, now test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a)
+[0m15:08:45.178052 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617, now test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d)
+[0m15:08:45.178503 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select orcamento
+from "dw_analytics"."raw"."campaigns"
+where orcamento is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.178929 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:08:45.179291 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:08:45.179658 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:08:45.180030 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:08:45.183417 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:08:45.186571 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:08:45.189581 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:08:45.190404 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:08:45.192238 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:08:45.192766 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:08:45.193204 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:08:45.194916 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:08:45.195491 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:08:45.197333 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:08:45.197720 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.018 seconds
+[0m15:08:45.198202 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select converted_at
+from "dw_analytics"."raw"."conversions"
+where converted_at is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.199607 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: ROLLBACK
+[0m15:08:45.200026 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:08:45.200429 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:08:45.200919 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:08:45.201435 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lead_id
+from "dw_analytics"."raw"."conversions"
+where lead_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.201812 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: Close
+[0m15:08:45.202172 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select conversion_id
+from "dw_analytics"."raw"."conversions"
+where conversion_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.202657 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:45.203093 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:08:45.203768 [info ] [Thread-3 (]: 8 of 17 PASS source_not_null_raw_campaigns_orcamento ........................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.204641 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:08:45.205122 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:08:45.205838 [info ] [Thread-3 (]: 12 of 17 START test source_not_null_raw_conversions_revenue .................... [RUN]
+[0m15:08:45.206358 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf, now test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5)
+[0m15:08:45.206781 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:08:45.210156 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:08:45.210878 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m15:08:45.211257 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:08:45.212473 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: ROLLBACK
+[0m15:08:45.216112 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:08:45.216550 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.014 seconds
+[0m15:08:45.216928 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.014 seconds
+[0m15:08:45.218187 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: ROLLBACK
+[0m15:08:45.218572 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: Close
+[0m15:08:45.219747 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: ROLLBACK
+[0m15:08:45.220353 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:08:45.220846 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: Close
+[0m15:08:45.221548 [info ] [Thread-2 (]: 10 of 17 PASS source_not_null_raw_conversions_converted_at ..................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.221976 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: Close
+[0m15:08:45.222331 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "dw_analytics"."raw"."conversions"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.222938 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:08:45.223419 [info ] [Thread-1 (]: 11 of 17 PASS source_not_null_raw_conversions_lead_id .......................... [[32mPASS[0m in 0.05s]
+[0m15:08:45.223822 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:08:45.224351 [info ] [Thread-4 (]: 9 of 17 PASS source_not_null_raw_conversions_conversion_id ..................... [[32mPASS[0m in 0.05s]
+[0m15:08:45.224890 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:08:45.225524 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:08:45.226117 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:08:45.226552 [info ] [Thread-2 (]: 13 of 17 START test source_not_null_raw_leads_campaign_id ...................... [RUN]
+[0m15:08:45.226979 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:08:45.227582 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:08:45.228110 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a, now test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab)
+[0m15:08:45.228616 [info ] [Thread-1 (]: 14 of 17 START test source_not_null_raw_leads_lead_id .......................... [RUN]
+[0m15:08:45.229068 [info ] [Thread-4 (]: 15 of 17 START test source_unique_raw_campaigns_campaign_id .................... [RUN]
+[0m15:08:45.229616 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:08:45.230087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d, now test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97)
+[0m15:08:45.230538 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918, now test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c)
+[0m15:08:45.233884 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:08:45.234334 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m15:08:45.234743 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:08:45.235145 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:08:45.236701 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: ROLLBACK
+[0m15:08:45.240049 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:08:45.240505 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:08:45.246010 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:08:45.248650 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:08:45.249108 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: Close
+[0m15:08:45.249767 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:08:45.250150 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:08:45.250629 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:08:45.252861 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:08:45.253356 [info ] [Thread-3 (]: 12 of 17 PASS source_not_null_raw_conversions_revenue .......................... [[32mPASS[0m in 0.05s]
+[0m15:08:45.255245 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:08:45.255665 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select campaign_id
+from "dw_analytics"."raw"."leads"
+where campaign_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.256290 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:08:45.256872 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:08:45.257295 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:08:45.257753 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:08:45.258165 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:08:45.258676 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lead_id
+from "dw_analytics"."raw"."leads"
+where lead_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.259050 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    campaign_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."campaigns"
+where campaign_id is not null
+group by campaign_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.259647 [info ] [Thread-3 (]: 16 of 17 START test source_unique_raw_conversions_conversion_id ................ [RUN]
+[0m15:08:45.260199 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:45.260573 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:08:45.260984 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5, now test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53)
+[0m15:08:45.261627 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:08:45.264739 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:08:45.265530 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:08:45.267718 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:08:45.268398 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:08:45.268781 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    conversion_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."conversions"
+where conversion_id is not null
+group by conversion_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.269148 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:08:45.269530 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:08:45.271126 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: ROLLBACK
+[0m15:08:45.271754 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: Close
+[0m15:08:45.272389 [info ] [Thread-4 (]: 15 of 17 PASS source_unique_raw_campaigns_campaign_id .......................... [[32mPASS[0m in 0.04s]
+[0m15:08:45.272924 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:08:45.273336 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:08:45.273771 [info ] [Thread-4 (]: 17 of 17 START test source_unique_raw_leads_lead_id ............................ [RUN]
+[0m15:08:45.274243 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c, now test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0)
+[0m15:08:45.274594 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:08:45.278105 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:08:45.278621 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:08:45.279933 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: ROLLBACK
+[0m15:08:45.280432 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:08:45.280919 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: Close
+[0m15:08:45.283720 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:08:45.284617 [info ] [Thread-3 (]: 16 of 17 PASS source_unique_raw_conversions_conversion_id ...................... [[32mPASS[0m in 0.02s]
+[0m15:08:45.285249 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:08:45.285723 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.028 seconds
+[0m15:08:45.286115 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.026 seconds
+[0m15:08:45.289123 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: ROLLBACK
+[0m15:08:45.289598 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:08:45.290724 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: ROLLBACK
+[0m15:08:45.291178 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    lead_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."leads"
+where lead_id is not null
+group by lead_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:08:45.291571 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: Close
+[0m15:08:45.291948 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:08:45.292285 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: Close
+[0m15:08:45.292877 [info ] [Thread-2 (]: 13 of 17 PASS source_not_null_raw_leads_campaign_id ............................ [[32mPASS[0m in 0.06s]
+[0m15:08:45.293498 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:08:45.293963 [info ] [Thread-1 (]: 14 of 17 PASS source_not_null_raw_leads_lead_id ................................ [[32mPASS[0m in 0.06s]
+[0m15:08:45.294749 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:08:45.314283 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.022 seconds
+[0m15:08:45.315722 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: ROLLBACK
+[0m15:08:45.316376 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: Close
+[0m15:08:45.317073 [info ] [Thread-4 (]: 17 of 17 PASS source_unique_raw_leads_lead_id .................................. [[32mPASS[0m in 0.04s]
+[0m15:08:45.317743 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:08:45.319000 [debug] [MainThread]: On master: COMMIT
+[0m15:08:45.319366 [debug] [MainThread]: Using postgres connection "master"
+[0m15:08:45.319695 [debug] [MainThread]: On master: COMMIT
+[0m15:08:45.319979 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:08:45.324473 [debug] [MainThread]: SQL status: COMMIT in 0.004 seconds
+[0m15:08:45.324897 [debug] [MainThread]: On master: Close
+[0m15:08:45.325442 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:08:45.325732 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97' was properly closed.
+[0m15:08:45.325998 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab' was properly closed.
+[0m15:08:45.326251 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53' was properly closed.
+[0m15:08:45.326518 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0' was properly closed.
+[0m15:08:45.326832 [info ] [MainThread]: 
+[0m15:08:45.327155 [info ] [MainThread]: Finished running 17 data tests in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m15:08:45.329588 [debug] [MainThread]: Command end result
+[0m15:08:45.355091 [debug] [MainThread]: Wrote artifact WritableManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/manifest.json
+[0m15:08:45.356780 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/semantic_manifest.json
+[0m15:08:45.362807 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/run_results.json
+[0m15:08:45.363160 [info ] [MainThread]: 
+[0m15:08:45.363542 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:08:45.363872 [info ] [MainThread]: 
+[0m15:08:45.364256 [error] [MainThread]: [31mFailure in test source_accepted_values_raw_leads_campaign_id__google__meta__linkedin (models/sources.yml)[0m
+[0m15:08:45.364730 [error] [MainThread]:   Database Error in test source_accepted_values_raw_leads_campaign_id__google__meta__linkedin (models/sources.yml)
+  invalid input syntax for type integer: "google"
+  LINE 29:     'google','meta','linkedin'
+               ^
+  compiled code at target/run/dbt_marketing_analytics/models/sources.yml/source_accepted_values_raw_lea_4caee098809e11da450059029a3fc2fa.sql
+[0m15:08:45.365123 [info ] [MainThread]: 
+[0m15:08:45.365494 [info ] [MainThread]:   compiled code at target/compiled/dbt_marketing_analytics/models/sources.yml/source_accepted_values_raw_lea_4caee098809e11da450059029a3fc2fa.sql
+[0m15:08:45.365793 [info ] [MainThread]: 
+[0m15:08:45.366100 [info ] [MainThread]: Done. PASS=16 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=17
+[0m15:08:45.366901 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.0088059, "process_in_blocks": "296", "process_kernel_time": 0.22323, "process_mem_max_rss": "130900", "process_out_blocks": "3032", "process_user_time": 1.888947}
+[0m15:08:45.367306 [debug] [MainThread]: Command `dbt test` failed at 15:08:45.367226 after 1.01 seconds
+[0m15:08:45.367663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51890cff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518a5adee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5185150a10>]}
+[0m15:08:45.367995 [debug] [MainThread]: Flushing usage events
+[0m15:08:45.991644 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:18:49.189205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dbbeda00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dcd956d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dbbedaf0>]}
+
+
+============================== 15:18:49.192120 | 6ca9dbfc-5231-4e36-81fb-5a91d4c94ada ==============================
+[0m15:18:49.192120 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:18:49.192659 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_colors': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'partial_parse': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt test --select source:raw', 'quiet': 'False', 'write_json': 'True', 'introspect': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'version_check': 'True', 'no_print': 'None', 'log_path': '/home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/logs', 'target_path': 'None', 'profiles_dir': '/home/murilo/.dbt', 'indirect_selection': 'eager', 'printer_width': '80'}
+[0m15:18:49.315221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ca9dbfc-5231-4e36-81fb-5a91d4c94ada', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dc375040>]}
+[0m15:18:49.365220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ca9dbfc-5231-4e36-81fb-5a91d4c94ada', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dc69fe00>]}
+[0m15:18:49.365963 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:18:49.447142 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m15:18:49.541906 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:18:49.542695 [debug] [MainThread]: Partial parsing: updated file: dbt_marketing_analytics://models/sources.yml
+[0m15:18:49.621980 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "raw_campaigns".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("raw", "campaigns").
+  
+  To fix this, change the name of one of these resources:
+  - source.dbt_marketing_analytics.raw.campaigns (models/sources.yml)
+  - source.dbt_marketing_analytics.raw.campaigns (models/sources.yml)
+[0m15:18:49.622922 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.47784492, "process_in_blocks": "0", "process_kernel_time": 0.175647, "process_mem_max_rss": "117996", "process_out_blocks": "16", "process_user_time": 1.438112}
+[0m15:18:49.623378 [debug] [MainThread]: Command `dbt test` failed at 15:18:49.623279 after 0.48 seconds
+[0m15:18:49.623732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dc8c13a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19db38aa80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19daf267e0>]}
+[0m15:18:49.624066 [debug] [MainThread]: Flushing usage events
+[0m15:18:50.232925 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:20:22.195427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f28b36e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f2bab3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f21701d0>]}
+
+
+============================== 15:20:22.198235 | 884f80b7-efdb-44b2-8590-c7aff17ac712 ==============================
+[0m15:20:22.198235 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:20:22.198768 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'fail_fast': 'False', 'target_path': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test --select source:raw', 'use_colors': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'log_path': '/home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/logs', 'log_cache_events': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'write_json': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'profiles_dir': '/home/murilo/.dbt'}
+[0m15:20:22.320445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f1afbec0>]}
+[0m15:20:22.368681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f26ae3c0>]}
+[0m15:20:22.369405 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:20:22.448337 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m15:20:22.538878 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:20:22.539649 [debug] [MainThread]: Partial parsing: updated file: dbt_marketing_analytics://models/sources.yml
+[0m15:20:22.690694 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'raw_campaigns'
+in package 'dbt_marketing_analytics' (models/sources.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m15:20:22.691323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20efd617c0>]}
+[0m15:20:22.796407 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_marketing_analytics.staging
+- models.dbt_marketing_analytics.marts
+[0m15:20:22.804089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f01570b0>]}
+[0m15:20:22.920460 [debug] [MainThread]: Wrote artifact WritableManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/manifest.json
+[0m15:20:22.922109 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/semantic_manifest.json
+[0m15:20:22.936418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20efd8d640>]}
+[0m15:20:22.936902 [info ] [MainThread]: Found 4 seeds, 35 data tests, 4 sources, 466 macros
+[0m15:20:22.937285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f05f9280>]}
+[0m15:20:22.939225 [info ] [MainThread]: 
+[0m15:20:22.939632 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:20:22.939983 [info ] [MainThread]: 
+[0m15:20:22.940494 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:20:22.943591 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dw_analytics_raw'
+[0m15:20:22.976609 [debug] [ThreadPool]: Using postgres connection "list_dw_analytics_raw"
+[0m15:20:22.977012 [debug] [ThreadPool]: On list_dw_analytics_raw: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "list_dw_analytics_raw"} */
+select
+      'dw_analytics' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'dw_analytics' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m15:20:22.977324 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:20:22.985188 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.008 seconds
+[0m15:20:22.986936 [debug] [ThreadPool]: On list_dw_analytics_raw: ROLLBACK
+[0m15:20:22.987463 [debug] [ThreadPool]: On list_dw_analytics_raw: Close
+[0m15:20:22.991615 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:22.992023 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:20:22.992374 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:20:22.998790 [debug] [MainThread]: SQL status: SELECT 0 in 0.006 seconds
+[0m15:20:22.999881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '884f80b7-efdb-44b2-8590-c7aff17ac712', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20efd1cc50>]}
+[0m15:20:23.000292 [debug] [MainThread]: On master: ROLLBACK
+[0m15:20:23.000773 [debug] [MainThread]: On master: COMMIT
+[0m15:20:23.001068 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:23.001351 [debug] [MainThread]: On master: COMMIT
+[0m15:20:23.001856 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m15:20:23.002148 [debug] [MainThread]: On master: Close
+[0m15:20:23.004723 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:20:23.005130 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:20:23.005553 [info ] [Thread-1 (]: 1 of 18 START test source_accepted_values_raw_ad_spend_canal__google__meta__linkedin  [RUN]
+[0m15:20:23.006007 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41
+[0m15:20:23.006418 [info ] [Thread-2 (]: 2 of 18 START test source_accepted_values_raw_campaigns_canal__google__meta__linkedin  [RUN]
+[0m15:20:23.006849 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:20:23.007290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dw_analytics_raw, now test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86)
+[0m15:20:23.007652 [info ] [Thread-3 (]: 3 of 18 START test source_accepted_values_raw_leads_canal__google__meta__linkedin  [RUN]
+[0m15:20:23.008154 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54'
+[0m15:20:23.008509 [info ] [Thread-4 (]: 4 of 18 START test source_not_null_raw_ad_spend_canal .......................... [RUN]
+[0m15:20:23.008909 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:20:23.009324 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41'
+[0m15:20:23.009660 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:20:23.010091 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920'
+[0m15:20:23.017205 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:20:23.017696 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41
+[0m15:20:23.021076 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:20:23.021499 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:20:23.025719 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41"
+[0m15:20:23.032397 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:20:23.032852 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:20:23.033367 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:20:23.033946 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41
+[0m15:20:23.048099 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:20:23.050142 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:20:23.050612 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:20:23.052430 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41"
+[0m15:20:23.053085 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"
+[0m15:20:23.054730 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:20:23.055163 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"
+[0m15:20:23.055758 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        canal as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."ad_spend"
+    group by canal
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.056328 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41"
+[0m15:20:23.056674 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        canal as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."campaigns"
+    group by canal
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.057084 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:23.057448 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"
+[0m15:20:23.057812 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        canal as value_field,
+        count(*) as n_records
+
+    from "dw_analytics"."raw"."leads"
+    group by canal
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'google','meta','linkedin'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.058171 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:20:23.058647 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select canal
+from "dw_analytics"."raw"."ad_spend"
+where canal is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.059075 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:20:23.059521 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:20:23.063755 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m15:20:23.064222 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.067570 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: ROLLBACK
+[0m15:20:23.068017 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m15:20:23.069253 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: ROLLBACK
+[0m15:20:23.069607 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m15:20:23.070919 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: ROLLBACK
+[0m15:20:23.071274 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54: Close
+[0m15:20:23.072462 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41: ROLLBACK
+[0m15:20:23.072894 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86: Close
+[0m15:20:23.073579 [info ] [Thread-2 (]: 2 of 18 PASS source_accepted_values_raw_campaigns_canal__google__meta__linkedin  [[32mPASS[0m in 0.07s]
+[0m15:20:23.073971 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920: Close
+[0m15:20:23.074375 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41: Close
+[0m15:20:23.074946 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54
+[0m15:20:23.075456 [info ] [Thread-1 (]: 1 of 18 PASS source_accepted_values_raw_ad_spend_canal__google__meta__linkedin . [[32mPASS[0m in 0.07s]
+[0m15:20:23.076131 [info ] [Thread-4 (]: 4 of 18 PASS source_not_null_raw_ad_spend_canal ................................ [[32mPASS[0m in 0.07s]
+[0m15:20:23.076680 [info ] [Thread-3 (]: 3 of 18 PASS source_accepted_values_raw_leads_canal__google__meta__linkedin .... [[32mPASS[0m in 0.07s]
+[0m15:20:23.077204 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:20:23.077877 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86
+[0m15:20:23.078371 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920
+[0m15:20:23.078833 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41
+[0m15:20:23.079220 [info ] [Thread-2 (]: 5 of 18 START test source_not_null_raw_campaigns_campaign_id ................... [RUN]
+[0m15:20:23.079686 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:20:23.080107 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:20:23.080525 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:20:23.080948 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_campaigns_canal__google__meta__linkedin.76e1716f54, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869)
+[0m15:20:23.081303 [info ] [Thread-1 (]: 6 of 18 START test source_not_null_raw_campaigns_canal ......................... [RUN]
+[0m15:20:23.081740 [info ] [Thread-4 (]: 7 of 18 START test source_not_null_raw_campaigns_nome_campanha ................. [RUN]
+[0m15:20:23.082176 [info ] [Thread-3 (]: 8 of 18 START test source_not_null_raw_campaigns_orcamento ..................... [RUN]
+[0m15:20:23.082618 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:20:23.082994 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_ad_spend_canal__google__meta__linkedin.4f20d1fb86, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832)
+[0m15:20:23.083426 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_ad_spend_canal.7ffba3a920, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617)
+[0m15:20:23.083831 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_accepted_values_raw_leads_canal__google__meta__linkedin.039c8d2f41, now test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf)
+[0m15:20:23.087149 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:20:23.087618 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:20:23.088087 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:20:23.088512 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:20:23.091708 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:20:23.094944 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:20:23.095343 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:20:23.098490 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:20:23.101973 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:20:23.102494 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:20:23.102892 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:20:23.104589 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:20:23.105012 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:20:23.106891 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:20:23.107311 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"
+[0m15:20:23.109297 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:20:23.109697 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"
+[0m15:20:23.110201 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select campaign_id
+from "dw_analytics"."raw"."campaigns"
+where campaign_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.110764 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"
+[0m15:20:23.111235 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select nome_campanha
+from "dw_analytics"."raw"."campaigns"
+where nome_campanha is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.111612 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"
+[0m15:20:23.111982 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:20:23.112404 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select canal
+from "dw_analytics"."raw"."campaigns"
+where canal is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.112755 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:20:23.113123 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select orcamento
+from "dw_analytics"."raw"."campaigns"
+where orcamento is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.113595 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:23.114105 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:20:23.118750 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.120168 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: ROLLBACK
+[0m15:20:23.120606 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.120970 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.122037 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: ROLLBACK
+[0m15:20:23.122416 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m15:20:23.122793 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869: Close
+[0m15:20:23.123982 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: ROLLBACK
+[0m15:20:23.125206 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: ROLLBACK
+[0m15:20:23.125583 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832: Close
+[0m15:20:23.126211 [info ] [Thread-2 (]: 5 of 18 PASS source_not_null_raw_campaigns_campaign_id ......................... [[32mPASS[0m in 0.05s]
+[0m15:20:23.126674 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf: Close
+[0m15:20:23.127300 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869
+[0m15:20:23.127812 [info ] [Thread-1 (]: 6 of 18 PASS source_not_null_raw_campaigns_canal ............................... [[32mPASS[0m in 0.04s]
+[0m15:20:23.128227 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617: Close
+[0m15:20:23.128676 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:20:23.129177 [info ] [Thread-3 (]: 8 of 18 PASS source_not_null_raw_campaigns_orcamento ........................... [[32mPASS[0m in 0.05s]
+[0m15:20:23.129868 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832
+[0m15:20:23.130311 [info ] [Thread-2 (]: 9 of 18 START test source_not_null_raw_conversions_conversion_id ............... [RUN]
+[0m15:20:23.130931 [info ] [Thread-4 (]: 7 of 18 PASS source_not_null_raw_campaigns_nome_campanha ....................... [[32mPASS[0m in 0.05s]
+[0m15:20:23.131492 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf
+[0m15:20:23.131868 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:20:23.132359 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_campaign_id.4d94b0e869, now test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918)
+[0m15:20:23.132891 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617
+[0m15:20:23.133366 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:20:23.133780 [info ] [Thread-1 (]: 10 of 18 START test source_not_null_raw_conversions_converted_at ............... [RUN]
+[0m15:20:23.134292 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:20:23.134760 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:20:23.135147 [info ] [Thread-3 (]: 11 of 18 START test source_not_null_raw_conversions_lead_id .................... [RUN]
+[0m15:20:23.135611 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_canal.1847112832, now test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a)
+[0m15:20:23.138826 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:20:23.139243 [info ] [Thread-4 (]: 12 of 18 START test source_not_null_raw_conversions_revenue .................... [RUN]
+[0m15:20:23.139774 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_orcamento.bd51cb03cf, now test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d)
+[0m15:20:23.140197 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:20:23.140753 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_campaigns_nome_campanha.ed69937617, now test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5)
+[0m15:20:23.141142 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:20:23.144173 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:20:23.144645 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:20:23.145105 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:20:23.148365 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:20:23.150180 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:20:23.153038 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:20:23.153426 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:20:23.155576 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:20:23.156054 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:20:23.156548 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:20:23.158376 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:20:23.158771 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"
+[0m15:20:23.161858 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:20:23.162264 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"
+[0m15:20:23.162861 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select converted_at
+from "dw_analytics"."raw"."conversions"
+where converted_at is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.163508 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"
+[0m15:20:23.163894 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select conversion_id
+from "dw_analytics"."raw"."conversions"
+where conversion_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.164276 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:23.164627 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"
+[0m15:20:23.164990 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lead_id
+from "dw_analytics"."raw"."conversions"
+where lead_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.165356 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:20:23.165842 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "dw_analytics"."raw"."conversions"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.166243 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:20:23.166690 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:20:23.171124 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m15:20:23.171630 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.172914 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: ROLLBACK
+[0m15:20:23.173310 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.173691 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.174913 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: ROLLBACK
+[0m15:20:23.176211 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: ROLLBACK
+[0m15:20:23.176575 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918: Close
+[0m15:20:23.177756 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: ROLLBACK
+[0m15:20:23.178471 [info ] [Thread-2 (]: 9 of 18 PASS source_not_null_raw_conversions_conversion_id ..................... [[32mPASS[0m in 0.05s]
+[0m15:20:23.178870 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5: Close
+[0m15:20:23.179187 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d: Close
+[0m15:20:23.179526 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a: Close
+[0m15:20:23.179989 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918
+[0m15:20:23.180517 [info ] [Thread-4 (]: 12 of 18 PASS source_not_null_raw_conversions_revenue .......................... [[32mPASS[0m in 0.04s]
+[0m15:20:23.181039 [info ] [Thread-3 (]: 11 of 18 PASS source_not_null_raw_conversions_lead_id .......................... [[32mPASS[0m in 0.04s]
+[0m15:20:23.181661 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:20:23.182237 [info ] [Thread-1 (]: 10 of 18 PASS source_not_null_raw_conversions_converted_at ..................... [[32mPASS[0m in 0.05s]
+[0m15:20:23.182763 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5
+[0m15:20:23.183246 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d
+[0m15:20:23.183616 [info ] [Thread-2 (]: 13 of 18 START test source_not_null_raw_leads_campaign_id ...................... [RUN]
+[0m15:20:23.184212 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a
+[0m15:20:23.184686 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0
+[0m15:20:23.185181 [debug] [Thread-3 (]: Began running node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:20:23.185670 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_conversion_id.8661fdb918, now test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab)
+[0m15:20:23.186223 [debug] [Thread-1 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:20:23.186737 [info ] [Thread-4 (]: 14 of 18 START test source_not_null_raw_leads_canal ............................ [RUN]
+[0m15:20:23.187229 [info ] [Thread-3 (]: 15 of 18 START test source_not_null_raw_leads_lead_id .......................... [RUN]
+[0m15:20:23.187697 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:20:23.188065 [info ] [Thread-1 (]: 16 of 18 START test source_unique_raw_campaigns_campaign_id .................... [RUN]
+[0m15:20:23.188596 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_revenue.8dfadc03f5, now test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0)
+[0m15:20:23.188995 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_lead_id.e09501a08d, now test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97)
+[0m15:20:23.192182 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:20:23.192636 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_conversions_converted_at.fbd7e4ba9a, now test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c)
+[0m15:20:23.193080 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0
+[0m15:20:23.193540 [debug] [Thread-3 (]: Began compiling node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:20:23.194143 [debug] [Thread-1 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:20:23.194568 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:20:23.197611 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0"
+[0m15:20:23.200844 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:20:23.205398 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:20:23.207307 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:20:23.207995 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0
+[0m15:20:23.208578 [debug] [Thread-3 (]: Began executing node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:20:23.210151 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0"
+[0m15:20:23.211812 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:20:23.212220 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"
+[0m15:20:23.212683 [debug] [Thread-1 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:20:23.213251 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select campaign_id
+from "dw_analytics"."raw"."leads"
+where campaign_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.213671 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0"
+[0m15:20:23.214092 [debug] [Thread-3 (]: Using postgres connection "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"
+[0m15:20:23.215884 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:20:23.216276 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:20:23.216694 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select canal
+from "dw_analytics"."raw"."leads"
+where canal is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.217093 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lead_id
+from "dw_analytics"."raw"."leads"
+where lead_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.217758 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:20:23.218100 [debug] [Thread-1 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"
+[0m15:20:23.218448 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:20:23.218967 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    campaign_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."campaigns"
+where campaign_id is not null
+group by campaign_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.219565 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:23.224550 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m15:20:23.225091 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.226638 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: ROLLBACK
+[0m15:20:23.227096 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m15:20:23.227504 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m15:20:23.228570 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0: ROLLBACK
+[0m15:20:23.229890 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: ROLLBACK
+[0m15:20:23.230283 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab: Close
+[0m15:20:23.231306 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: ROLLBACK
+[0m15:20:23.231937 [info ] [Thread-2 (]: 13 of 18 PASS source_not_null_raw_leads_campaign_id ............................ [[32mPASS[0m in 0.05s]
+[0m15:20:23.232305 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0: Close
+[0m15:20:23.232674 [debug] [Thread-1 (]: On test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c: Close
+[0m15:20:23.233135 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab
+[0m15:20:23.233457 [debug] [Thread-3 (]: On test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97: Close
+[0m15:20:23.234011 [info ] [Thread-4 (]: 14 of 18 PASS source_not_null_raw_leads_canal .................................. [[32mPASS[0m in 0.05s]
+[0m15:20:23.234502 [info ] [Thread-1 (]: 16 of 18 PASS source_unique_raw_campaigns_campaign_id .......................... [[32mPASS[0m in 0.04s]
+[0m15:20:23.234895 [debug] [Thread-2 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:20:23.235475 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0
+[0m15:20:23.236002 [info ] [Thread-3 (]: 15 of 18 PASS source_not_null_raw_leads_lead_id ................................ [[32mPASS[0m in 0.05s]
+[0m15:20:23.236613 [debug] [Thread-1 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c
+[0m15:20:23.237079 [info ] [Thread-2 (]: 17 of 18 START test source_unique_raw_conversions_conversion_id ................ [RUN]
+[0m15:20:23.237672 [debug] [Thread-4 (]: Began running node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:20:23.238258 [debug] [Thread-3 (]: Finished running node test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97
+[0m15:20:23.238794 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_leads_campaign_id.965c1a6aab, now test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53)
+[0m15:20:23.239231 [info ] [Thread-4 (]: 18 of 18 START test source_unique_raw_leads_lead_id ............................ [RUN]
+[0m15:20:23.239833 [debug] [Thread-2 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:20:23.240213 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_marketing_analytics.source_not_null_raw_leads_canal.8e532b1ca0, now test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0)
+[0m15:20:23.243635 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:20:23.244040 [debug] [Thread-4 (]: Began compiling node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:20:23.248910 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:20:23.249449 [debug] [Thread-2 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:20:23.251235 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:20:23.251707 [debug] [Thread-4 (]: Began executing node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:20:23.253436 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:20:23.253909 [debug] [Thread-2 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"
+[0m15:20:23.254351 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    conversion_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."conversions"
+where conversion_id is not null
+group by conversion_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.254707 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:20:23.255150 [debug] [Thread-4 (]: Using postgres connection "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"
+[0m15:20:23.255557 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_marketing_analytics", "target_name": "dev", "node_id": "test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    lead_id as unique_field,
+    count(*) as n_records
+
+from "dw_analytics"."raw"."leads"
+where lead_id is not null
+group by lead_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:20:23.255942 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:20:23.263039 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m15:20:23.264591 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: ROLLBACK
+[0m15:20:23.265183 [debug] [Thread-2 (]: On test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53: Close
+[0m15:20:23.265786 [info ] [Thread-2 (]: 17 of 18 PASS source_unique_raw_conversions_conversion_id ...................... [[32mPASS[0m in 0.03s]
+[0m15:20:23.266365 [debug] [Thread-2 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53
+[0m15:20:23.276488 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.020 seconds
+[0m15:20:23.277965 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: ROLLBACK
+[0m15:20:23.278618 [debug] [Thread-4 (]: On test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0: Close
+[0m15:20:23.279231 [info ] [Thread-4 (]: 18 of 18 PASS source_unique_raw_leads_lead_id .................................. [[32mPASS[0m in 0.04s]
+[0m15:20:23.279788 [debug] [Thread-4 (]: Finished running node test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0
+[0m15:20:23.281056 [debug] [MainThread]: On master: COMMIT
+[0m15:20:23.281405 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:23.281690 [debug] [MainThread]: On master: COMMIT
+[0m15:20:23.281987 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:20:23.286519 [debug] [MainThread]: SQL status: COMMIT in 0.004 seconds
+[0m15:20:23.286916 [debug] [MainThread]: On master: Close
+[0m15:20:23.287440 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:20:23.287752 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_unique_raw_campaigns_campaign_id.3089140b0c' was properly closed.
+[0m15:20:23.288133 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_unique_raw_conversions_conversion_id.fdec9c1f53' was properly closed.
+[0m15:20:23.288469 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_not_null_raw_leads_lead_id.aa27196f97' was properly closed.
+[0m15:20:23.288808 [debug] [MainThread]: Connection 'test.dbt_marketing_analytics.source_unique_raw_leads_lead_id.78d3beacd0' was properly closed.
+[0m15:20:23.289126 [info ] [MainThread]: 
+[0m15:20:23.289481 [info ] [MainThread]: Finished running 18 data tests in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m15:20:23.292647 [debug] [MainThread]: Command end result
+[0m15:20:23.316710 [debug] [MainThread]: Wrote artifact WritableManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/manifest.json
+[0m15:20:23.318458 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/semantic_manifest.json
+[0m15:20:23.324121 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/murilo/Área de trabalho/dbt-analytics-project/dbt_marketing_analytics/target/run_results.json
+[0m15:20:23.324494 [info ] [MainThread]: 
+[0m15:20:23.324850 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:20:23.325158 [info ] [MainThread]: 
+[0m15:20:23.325488 [info ] [MainThread]: Done. PASS=18 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=18
+[0m15:20:23.325955 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:20:23.326798 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.1761929, "process_in_blocks": "0", "process_kernel_time": 0.227271, "process_mem_max_rss": "132576", "process_out_blocks": "4000", "process_user_time": 2.080487}
+[0m15:20:23.327208 [debug] [MainThread]: Command `dbt test` succeeded at 15:20:23.327129 after 1.18 seconds
+[0m15:20:23.327557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f26d1760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f0567200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20f28dffe0>]}
+[0m15:20:23.327883 [debug] [MainThread]: Flushing usage events
+[0m15:20:23.932278 [debug] [MainThread]: An error was encountered while trying to flush usage events
